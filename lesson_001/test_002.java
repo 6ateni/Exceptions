@@ -20,6 +20,8 @@ package lesson_001;
 
     import java.util.Arrays;
 
+    
+    public class test_002{
 class Answer {
     public int[] subArrays(int[] a, int[] b){
       // Введите свое решение ниже
@@ -39,7 +41,7 @@ class Answer {
 }
 
 // Не удаляйте этот класс - он нужен для вывода результатов на экран и проверки
-public class test_002{ 
+public class Printer{ 
     public static void main(String[] args) { 
       int[] a = {};
       int[] b = {};
@@ -54,9 +56,10 @@ public class test_002{
         b = Arrays.stream(args[1].split(", ")).mapToInt(Integer::parseInt).toArray();
       }     
       
-      Answer ans = new Answer(); 
+      Answer ans = new test_002().new Answer(); 
       String itresume_res = Arrays.toString(ans.subArrays(a, b));     
       System.out.println(itresume_res);
     }
 }
     
+}

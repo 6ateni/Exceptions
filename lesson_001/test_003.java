@@ -22,6 +22,7 @@ package lesson_001;
 
 
     import java.util.Arrays;
+    public class test_003{
 class Answer {
     public int[] divArrays(int[] a, int[] b){
       // Введите свое решение ниже
@@ -45,7 +46,7 @@ class Answer {
 }
 
 // Не удаляйте этот класс - он нужен для вывода результатов на экран и проверки
-public class test_003{ 
+public class Printer{ 
     public static void main(String[] args) { 
       int[] a = {};
       int[] b = {};
@@ -60,9 +61,9 @@ public class test_003{
         b = Arrays.stream(args[1].split(", ")).mapToInt(Integer::parseInt).toArray();
       }     
       
-      Answer ans = new Answer(); 
+      Answer ans = new test_003().new Answer(); 
       String itresume_res = Arrays.toString(ans.divArrays(a, b));     
       System.out.println(itresume_res);
     }
 }
-
+}
